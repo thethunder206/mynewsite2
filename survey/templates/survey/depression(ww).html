@@ -1,0 +1,257 @@
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Depression Survey</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            background-color: rgb(130, 185, 245);-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--    <h1>Mental Health Depression Quiz World Wide</h1>-->
+<!--    <form method="post">-->
+<!--        {% csrf_token %}-->
+<!--        <label>Little interest or pleasure in doing things?:</label>-->
+<!--        <select name="name">-->
+<!--            <option value="0"> </option>-->
+<!--            <option value="1">Not at all</option>-->
+<!--            <option value="2">Several Days</option>-->
+<!--            <option value="3">More than half a week</option>-->
+<!--            <option value="4">Nearly every day</option>-->
+<!--        </select><br><br>-->
+
+<!--        <label>Feeling down, depressed, or hopeless?:</label>-->
+<!--        <select name="name1">-->
+<!--            <option value="0"> </option>-->
+<!--            <option value="1">Not at all</option>-->
+<!--            <option value="2">Several Days</option>-->
+<!--            <option value="3">More than half a week</option>-->
+<!--            <option value="4">Nearly every day</option>-->
+<!--        </select><br><br>-->
+
+<!--        <label>Trouble falling asleep, staying asleep, or sleeping too much?:</label>-->
+<!--        <select name="name2">-->
+<!--            <option value="0"> </option>-->
+<!--            <option value="1">Not at all</option>-->
+<!--            <option value="2">Several Days</option>-->
+<!--            <option value="3">More than half a week</option>-->
+<!--            <option value="4">Nearly every day</option>-->
+<!--        </select><br><br>-->
+
+<!--        <label>Poor appetite or overeating?:</label>-->
+<!--        <select name="name3">-->
+<!--            <option value="0"> </option>-->
+<!--            <option value="1">Not at all</option>-->
+<!--            <option value="2">Several Days</option>-->
+<!--            <option value="3">More than half a week</option>-->
+<!--            <option value="4">Nearly every day</option>-->
+<!--        </select><br><br>-->
+
+<!--        <label>Feeling bad about yourself - or that you are a failure or have let yourself or your family down?:</label>-->
+<!--        <select name="name4">-->
+<!--            <option value="0"> </option>-->
+<!--            <option value="1">Not at all</option>-->
+<!--            <option value="2">Several Days</option>-->
+<!--            <option value="3">More than half a week</option>-->
+<!--            <option value="4">Nearly every day</option>-->
+<!--        </select><br><br>-->
+
+<!--        <label>Trouble concentrating on things, such as reading the newspaper or watching television?:</label>-->
+<!--        <select name="name5">-->
+<!--            <option value="0"> </option>-->
+<!--            <option value="1">Not at all</option>-->
+<!--            <option value="2">Several Days</option>-->
+<!--            <option value="3">More than half a week</option>-->
+<!--            <option value="4">Nearly every day</option>-->
+<!--        </select><br><br>-->
+
+<!--        <label>Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?:</label>-->
+<!--        <select name="name6">-->
+<!--            <option value="0"> </option>-->
+<!--            <option value="1">Not at all</option>-->
+<!--            <option value="2">Several Days</option>-->
+<!--            <option value="3">More than half a week</option>-->
+<!--            <option value="4">Nearly every day</option>-->
+<!--        </select><br><br>-->
+
+<!--        <label>Thoughts that you would be better off dead, or of hurting yourself?:</label>-->
+<!--        <select name="name7">-->
+<!--            <option value="0"> </option>-->
+<!--            <option value="1">Not at all</option>-->
+<!--            <option value="2">Several Days</option>-->
+<!--            <option value="3">More than half a week</option>-->
+<!--            <option value="4">Nearly every day</option>-->
+<!--        </select><br><br>-->
+
+<!--        <button type="submit">Submit data for evaluation</button>-->
+<!--    </form>-->
+<!--    <button onclick="location.href='{% url 'output_ww' %}'">Find your results</button> <hr>-->
+<!--        {% if data %}-->
+<!--        <p><b>Results: {{data}}</b></p>-->
+<!--        <p>{{add}}</p>-->
+<!--        {% endif %}-->
+<!--</body>-->
+<!--</html>-->
+
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Depression Quiz Through UWCSEA">
+    <meta name="description" content="">
+    <title>quiz(uwc)</title>
+    <link rel="stylesheet" href=" {% static 'assets/nicepage.css' %} " media="screen">
+<link rel="stylesheet" href=" {% static 'assets/quiz(uwc).css' %} " media="screen">
+    <script class="u-script" type="text/javascript" src=" {% static 'assets/jquery.js' %} " defer=""></script>
+    <script class="u-script" type="text/javascript" src=" {% static 'assets/nicepage.js' %} " defer=""></script>
+    <meta name="generator" content="Nicepage 5.21.3, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href=" {% static 'assets/https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i' %} ">
+
+
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#047bcd">
+    <meta property="og:title" content="quiz(uwc)">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-d062"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
+    <section class="u-align-center u-clearfix u-custom-color-1 u-section-1" id="sec-1393">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Depression Quiz Through the World Wide Program</h1>
+        <p class="u-text u-text-body-alt-color u-text-2">You are now going to complete a depression quiz that will let you know if you are showing symptons of depression. After you select the option for each question, click enter.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-1 u-section-2" id="sec-a625">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-form u-form-1">
+          <form method="post">
+            {% csrf_token %}
+            <div class="u-form-group u-form-select u-form-group-1">
+              <label for="select-466a" class="u-label">Little interest or pleasure in doing things?</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-466a" name="name" class="u-input u-input-rectangle" required="required">
+                  <option value="0" data-calc=""></option>
+                  <option value="1" data-calc="Not at all">Not at all</option>
+                  <option value="2" data-calc="Several Days">Several Days</option>
+                  <option value="3" data-calc="More than half a week">More than half a week</option>
+                  <option value="4" data-calc="Nearly Every Day" >Nearly Every Day</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-2">
+              <label for="select-49cb" class="u-label">Feeling down, depressed, or hopeless?</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-49cb" name="name1" class="u-input u-input-rectangle" required="required">
+                  <option value="0" data-calc=""></option>
+                  <option value="1" data-calc="Not at all">Not at all</option>
+                  <option value="2" data-calc="Several Days">Several Days</option>
+                  <option value="3" data-calc="More than half a week">More than half a week</option>
+                  <option value="4" data-calc="Nearly Every Day" >Nearly Every Day</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-3">
+              <label for="select-c149" class="u-label">Trouble falling asleep, staying asleep, or sleeping too much?:</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-c149" name="name2" class="u-input u-input-rectangle" required="required">
+                  <option value="0" data-calc=""></option>
+                  <option value="1" data-calc="Not at all">Not at all</option>
+                  <option value="2" data-calc="Several Days">Several Days</option>
+                  <option value="3" data-calc="More than half a week">More than half a week</option>
+                  <option value="4" data-calc="Nearly Every Day" >Nearly Every Day</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-4">
+              <label for="select-437f" class="u-label">Poor appetite or overeating?:</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-437f" name="name3" class="u-input u-input-rectangle" required="required">
+                  <option value="0" data-calc=""></option>
+                  <option value="1" data-calc="Not at all">Not at all</option>
+                  <option value="2" data-calc="Several Days">Several Days</option>
+                  <option value="3" data-calc="More than half a week">More than half a week</option>
+                  <option value="4" data-calc="Nearly Every Day" >Nearly Every Day</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-5">
+              <label for="select-99fe" class="u-label">Feeling bad about yourself - or that you are a failure or have let yourself or your family down?:</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-99fe" name="name4" class="u-input u-input-rectangle" required="required">
+                  <option value="0" data-calc=""></option>
+                  <option value="1" data-calc="Not at all">Not at all</option>
+                  <option value="2" data-calc="Several Days">Several Days</option>
+                  <option value="3" data-calc="More than half a week">More than half a week</option>
+                  <option value="4" data-calc="Nearly Every Day" >Nearly Every Day</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-6">
+              <label for="select-464b" class="u-label">Trouble concentrating on things, such as reading the newspaper or watching television?</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-464b" name="name5" class="u-input u-input-rectangle" required="required">
+                  <option value="0" data-calc=""></option>
+                  <option value="1" data-calc="Not at all">Not at all</option>
+                  <option value="2" data-calc="Several Days">Several Days</option>
+                  <option value="3" data-calc="More than half a week">More than half a week</option>
+                  <option value="4" data-calc="Nearly Every Day">Nearly Every Day</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-7">
+              <label for="select-19f4" class="u-label">Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-19f4" name="name6" class="u-input u-input-rectangle" required="required">
+                  <option value="0" data-calc=""></option>
+                  <option value="1" data-calc="Not at all">Not at all</option>
+                  <option value="2" data-calc="Several Days">Several Days</option>
+                  <option value="3" data-calc="More than half a week">More than half a week</option>
+                  <option value="4" data-calc="Nearly Every Day">Nearly Every Day</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-8">
+              <label for="select-5ced" class="u-label">Thoughts that you would be better off dead, or of hurting yourself?:</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-5ced" name="name7" class="u-input u-input-rectangle" required="required">
+                  <option value="0" data-calc=""></option>
+                  <option value="1" data-calc="Not at all">Not at all</option>
+                  <option value="2" data-calc="Several Days">Several Days</option>
+                  <option value="3" data-calc="More than half a week">More than half a week</option>
+                  <option value="4" data-calc="Nearly Every Day">Nearly Every Day</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+
+            </div>
+            <div class="u-align-left u-form-group u-form-submit">
+              <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-2 u-btn-1">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+          </form>
+          <button onclick="location.href='{% url 'output_ww' %}'" href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-2 u-btn-1">Find your results</button> <hr>
+              {% if data %}
+              <h4><b>Results: {{data}}</b></h4>
+              <h4>{{add}}</h4>
+              <h6>{{check}}</h6>
+              <a href='no'><h4>Finish test</h4></a>
+              {% endif %}
+        </div>
+      </div>
+    </section>
+</body></html>

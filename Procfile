@@ -1,0 +1,1 @@
+web gunicorn mynewsite.wsgi:application --log-file -
